@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+</head>
+
+ 
+
+<body>
+
+    <script>
+
+    let a,b,c;
+    for(let i=1;i<=1;i++)
+
+    {
+
+        a=parseFloat(prompt('Introduzca lado1'));
+
+        b=parseFloat(prompt('Introduzca lado2'));
+
+        c=parseFloat(prompt('Introduzca lado3'));
+
+        document.write('<br> Triangulo '+i+' : '+a+' , '+b+' , '+c);
+
+        if(a==b && b==c) {
+
+            document.write(' El triangulo es equilatero ');
+
+            equilatero=equilatero+1;
+
+        } else if(a==b || b==c || a==c) {
+
+            document.write(' El triangulo es isosceles ');
+
+            isosceles=isosceles+1;
+
+        } else { //(a!=b && b!=c)
+
+            document.write(' El triangulo es escaleno ');
+
+            escaleno=escaleno+1;
+
+        }
+
+    }
+
+    </script>
+
+</body>
+
+</html>
